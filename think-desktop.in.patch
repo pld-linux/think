@@ -1,0 +1,8 @@
+--- think-0.2.1/src/think.desktop.in~	Sun Dec  9 01:11:30 2001
++++ think-0.2.1/src/think.desktop.in	Sun Dec  9 01:11:30 2001
+@@ -4,4 +4,4 @@
+ Exec=think
+ Icon=gnome-hint.png
+ Terminal=0
+-Type=Applications
++Type=Application
