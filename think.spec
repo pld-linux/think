@@ -2,7 +2,7 @@ Summary:	Think - Gnomified outliner
 Summary(pl):	Think - gnomowy outliner
 Name:		think
 Version:	0.2.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://primates.ximian.com/~peter/think/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	intltool
-BuildRequires:	libglade-devel
+BuildRequires:	libglade-gnome-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -93,8 +93,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	sysdir=%{_applnkdir}/Office/PIMs
 
-gzip -9nf ChangeLog AUTHORS NEWS README
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -102,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog AUTHORS NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Office/PIMs/*
 %{_datadir}/think
