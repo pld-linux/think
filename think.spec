@@ -1,13 +1,14 @@
 Summary:	Think - Gnomified outliner
 Name:		think
 Version:	0.1.4
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://www.duke.edu/~pat4/think/%{name}-%{version}.tar.gz
 URL:		http://www.duke.edu/~pat4/think/
+Patch0:		%{name}-use_AM_GNU_GETTEXT.patch
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libxml-devel
@@ -47,9 +48,13 @@ Misc:
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 gettextize --copy --force
+aclocal -I %{_aclocaldir}/gnome
+autoconf
+automake -a -c
 %configure
 %{__make}
 
