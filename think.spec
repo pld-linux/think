@@ -81,8 +81,8 @@ gettextize --copy --force
 libtoolize --copy --force
 xml-i18n-toolize --copy --force
 aclocal -I %{_aclocaldir}/gnome
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
