@@ -6,6 +6,7 @@ Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://primates.ximian.com/~peter/think/%{name}-%{version}.tar.gz
+# Source0-md5:	cca6ebb9520f9eaa096b68f39616f70c
 Patch0:		%{name}-desktop.in.patch
 Patch1:		%{name}-am_fixes.patch
 URL:		http://primates.ximian.com/~peter/think/
