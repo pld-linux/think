@@ -1,0 +1,11 @@
+--- think-0.1.4/configure.in	Sat Apr 14 05:02:15 2001
++++ think-0.1.4/configure.in~	Wed May  3 00:17:12 2000
+@@ -20,7 +20,7 @@
+ 
+ dnl ## internationalization support
+ ALL_LINGUAS="ja tr"
+-AM_GNU_GETTEXT
++AM_GNOME_GETTEXT
+ 
+ AC_OUTPUT([
+ Makefile
