@@ -13,7 +13,6 @@ BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
-%define		_sysconfigdir	/etc/X11/GNOME
 
 %description
 Think is a Gnomified outliner. It doesn't do a whole lot at this
