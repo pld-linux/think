@@ -2,7 +2,7 @@ Summary:	Think - Gnomified outliner
 Summary(pl):	Think - gnomowy outliner
 Name:		think
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	sysdir=%{_applnkdir}/Applications
+	sysdir=%{_applnkdir}/Office/PIMs
 
 gzip -9nf ChangeLog AUTHORS NEWS README
 
@@ -99,5 +99,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Applications/*
+%{_applnkdir}/Office/PIMs/*
 %{_datadir}/think
