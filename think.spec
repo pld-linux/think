@@ -6,15 +6,16 @@ Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://primates.ximian.com/~peter/think/%{name}-%{version}.tar.gz
-URL:		http://primates.ximian.com/~peter/think/
 Patch0:		%{name}-desktop.in.patch
 Patch1:		%{name}-am_fixes.patch
+URL:		http://primates.ximian.com/~peter/think/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	intltool
 BuildRequires:	libglade-gnome-devel
+BuildRequires:	libtool
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -80,7 +81,7 @@ rm -f missing
 %{__gettextize}
 %{__libtoolize}
 xml-i18n-toolize --copy --force
-aclocal -I %{_aclocaldir}/gnome
+%{__aclocal} -I %{_aclocaldir}/gnome
 %{__autoconf}
 %{__automake}
 %configure
