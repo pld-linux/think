@@ -19,7 +19,6 @@ BuildRequires:	libtool
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 Think is a Gnomified outliner. It doesn't do a whole lot at this
