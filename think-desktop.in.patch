@@ -3,7 +3,8 @@
 @@ -4,4 +4,4 @@
  Exec=think
  Icon=gnome-hint.png
- Terminal=0
+-Terminal=0
 -Type=Applications
++Terminal=false
 +Type=Application
 +Categories=GTK;GNOME;Office;X-PIM;
