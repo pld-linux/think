@@ -1,10 +1,12 @@
 --- think-0.2.1/src/think.desktop.in~	Sun Dec  9 01:11:30 2001
 +++ think-0.2.1/src/think.desktop.in	Sun Dec  9 01:11:30 2001
-@@ -4,4 +4,4 @@
+@@ -3,5 +3,7 @@
+ _Comment=Outliner
  Exec=think
  Icon=gnome-hint.png
 -Terminal=0
 -Type=Applications
 +Terminal=false
++Encoding=UTF-8
 +Type=Application
 +Categories=GTK;GNOME;Office;X-PIM;
