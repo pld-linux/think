@@ -11,6 +11,7 @@ URL:		http://primates.ximian.com/~peter/think/
 Patch0:		%{name}-use_AM_GNU_GETTEXT.patch
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
+BuildRequires:	libglade-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
