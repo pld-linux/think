@@ -5,8 +5,6 @@ Version:	0.2.1
 Release:	3
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(pl):	X11/Aplikacje
 Source0:	http://primates.ximian.com/~peter/think/%{name}-%{version}.tar.gz
 URL:		http://primates.ximian.com/~peter/think/
 Patch0:		%{name}-desktop.in.patch
