@@ -1,9 +1,10 @@
 Summary:	Think - Gnomified outliner
 Name:		think
 Version:	0.1.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://www.duke.edu/~pat4/think/%{name}-%{version}.tar.gz
 URL:		http://www.duke.edu/~pat4/think/
@@ -49,7 +50,6 @@ Misc:
 
 %build
 gettextize --copy --force
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
