@@ -73,12 +73,12 @@ przenoszenia li¶ci.
 %patch0 -p1
 
 %build
+#rm -f missing
 gettextize --copy --force
 aclocal -I %{_aclocaldir}/gnome
-autoconf
-rm -f missing
-automake -a -c
-%configure
+#autoconf
+#automake -a -c
+%configure2_13
 %{__make}
 
 %install
