@@ -1,7 +1,7 @@
 Summary:	Think - Gnomified outliner
 Name:		think
 Version:	0.1.4
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
