@@ -6,3 +6,4 @@
  Terminal=0
 -Type=Applications
 +Type=Application
++Categories=GTK;GNOME;Office;X-PIM;
