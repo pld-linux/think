@@ -4,8 +4,8 @@
  
  dnl ## internationalization support
  ALL_LINGUAS="ja tr"
--AM_GNU_GETTEXT
-+AM_GNOME_GETTEXT
+-AM_GNOME_GETTEXT
++AM_GNU_GETTEXT
  
  AC_OUTPUT([
  Makefile
