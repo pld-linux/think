@@ -1,6 +1,6 @@
 Summary:	Think - Gnomified outliner
 Name:		think
-Version:	0.2
+Version:	0.2.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -78,3 +78,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Applications/*
+%{_datadir}/think
