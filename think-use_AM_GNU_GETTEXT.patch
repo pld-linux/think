@@ -1,11 +1,11 @@
---- think-0.2/configure.in.orig	Sat Jun  2 14:08:05 2001
-+++ think-0.2/configure.in	Sun Jun  3 17:13:02 2001
+--- think-0.2.1/configure.in.orig	Wed Jun  6 17:22:30 2001
++++ think-0.2.1/configure.in	Mon Jun 18 01:55:07 2001
 @@ -21,7 +21,7 @@
  
  dnl ## internationalization support
- ALL_LINGUAS="hu it ja ko no pt_BR sv tr uk zh_TW.Big5"
+ ALL_LINGUAS="az hu it ja ko no pt_BR ru sv tr uk zh_TW.Big5"
 -AM_GNOME_GETTEXT
 +AM_GNU_GETTEXT
  
- dnl Set PACKAGE_LOCALE_DIR in config.h.
- if test "x${prefix}" = "xNONE"; then
+ AM_PROG_XML_I18N_TOOLS
+ 
