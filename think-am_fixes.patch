@@ -9,13 +9,9 @@
  
  bin_PROGRAMS = think
  noinst_PROGRAMS = outline_test
-@@ -45,9 +45,10 @@
- sysdir = $(datadir)/gnome/apps/Applications
- sys_in_files = think.desktop.in
+@@ -47,7 +47,7 @@
  sys_DATA = $(sys_in_files:.desktop.in=.desktop)
--@XML_I18N_MERGE_DESKTOP_RULE@
-+@XML_I18N_MERGE_DESKTOP_RULE1@
-+@XML_I18N_MERGE_DESKTOP_RULE2@
+ @XML_I18N_MERGE_DESKTOP_RULE@
  
 -thinkdir = $(datadir)/@PACKAGE@
 +thinkdir = $(pkgdatadir)
