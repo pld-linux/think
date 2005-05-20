@@ -2,14 +2,13 @@ Summary:	Think - Gnomified outliner
 Summary(pl):	Think - gnomowy outliner
 Name:		think
 Version:	0.2.1
-Release:	7
+Release:	7.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://primates.ximian.com/~peter/think/%{name}-%{version}.tar.gz
 # Source0-md5:	cca6ebb9520f9eaa096b68f39616f70c
 Patch0:		%{name}-desktop.in.patch
-Patch1:		%{name}-am_fixes.patch
-Patch2:		%{name}-locale-names.patch
+Patch1:		%{name}-acam_fixes.patch
 URL:		http://primates.ximian.com/~peter/think/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -73,17 +72,14 @@ przenoszenia li¶ci.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 mv -f po/{no,nb}.po
 mv -f po/{zh_TW.Big5,zh_TW}.po
 
 %build
-sed -e s/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/ configure.in > configure.in.tmp
-mv -f configure.in.tmp configure.in
 %{__gettextize}
 %{__libtoolize}
-xml-i18n-toolize --copy --force
+intltoolize --copy --force
 %{__aclocal} -I %{_aclocaldir}/gnome
 %{__autoconf}
 %{__automake}
