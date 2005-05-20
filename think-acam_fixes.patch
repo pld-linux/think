@@ -42,3 +42,14 @@
  
  dnl Set PACKAGE_LOCALE_DIR in config.h.
  if test "x${prefix}" = "xNONE"; then
+--- think-0.2.1/src/Makefile.am~	2005-05-20 10:49:52.000000000 +0200
++++ think-0.2.1/src/Makefile.am	2005-05-20 10:49:52.000000000 +0200
+@@ -45,7 +45,7 @@
+ sysdir = $(datadir)/gnome/apps/Applications
+ sys_in_files = think.desktop.in
+ sys_DATA = $(sys_in_files:.desktop.in=.desktop)
+-@XML_I18N_MERGE_DESKTOP_RULE@
++@INTLTOOL_DESKTOP_RULE@
+ 
+ thinkdir = $(pkgdatadir)
+ think_DATA = think.glade
