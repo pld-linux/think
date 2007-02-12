@@ -1,5 +1,5 @@
 Summary:	Think - Gnomified outliner
-Summary(pl.UTF-8):   Think - gnomowy outliner
+Summary(pl.UTF-8):	Think - gnomowy outliner
 Name:		think
 Version:	0.2.1
 Release:	7.1
