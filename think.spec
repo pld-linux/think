@@ -1,5 +1,5 @@
 Summary:	Think - Gnomified outliner
-Summary(pl):	Think - gnomowy outliner
+Summary(pl.UTF-8):   Think - gnomowy outliner
 Name:		think
 Version:	0.2.1
 Release:	7.1
@@ -49,24 +49,24 @@ Misc:
 - cut & paste
 - promote/demote buttons to move nodes around
 
-%description -l pl
-Think to gnomowy outliner. Niewiele na razie robi, ale mo¿e wczytywaæ
-i zapisywaæ zarysy tekstu.
+%description -l pl.UTF-8
+Think to gnomowy outliner. Niewiele na razie robi, ale moÅ¼e wczytywaÄ‡
+i zapisywaÄ‡ zarysy tekstu.
 
-Think u¿ywa emacsowego trybu outline do jego plików. To prosty format
-i ³atwy w u¿yciu z ka¿dym edytorem... Nie chcê wmuszaæ wszystkim
-Emacsa. Co wiêcej, jednym z powodów dla których piszê Thinka jest to,
-¿eby nie musieæ uruchamiaæ Emacsa...
+Think uÅ¼ywa emacsowego trybu outline do jego plikÃ³w. To prosty format
+i Å‚atwy w uÅ¼yciu z kaÅ¼dym edytorem... Nie chcÄ™ wmuszaÄ‡ wszystkim
+Emacsa. Co wiÄ™cej, jednym z powodÃ³w dla ktÃ³rych piszÄ™ Thinka jest to,
+Å¼eby nie musieÄ‡ uruchamiaÄ‡ Emacsa...
 
-W³asno¶ci drzewa: tytu³, pokazywanie numeracji, prioritetów i rzeczy
-skoñczonych.
+WÅ‚asnoÅ›ci drzewa: tytuÅ‚, pokazywanie numeracji, prioritetÃ³w i rzeczy
+skoÅ„czonych.
 
-W³asno¶ci wêz³a: tytu³, tekst, akcja (mo¿e byæ wska¼nikiem stopnia
-ukoñczenia), priorytet.
+WÅ‚asnoÅ›ci wÄ™zÅ‚a: tytuÅ‚, tekst, akcja (moÅ¼e byÄ‡ wskaÅºnikiem stopnia
+ukoÅ„czenia), priorytet.
 
-Oprócz tego: przenoszenie wêz³ów miêdzy branchami metod± "poci±gnij i
-upu¶æ", obs³uga "wytnij i wklej", przyciski promote/demote do
-przenoszenia li¶ci.
+OprÃ³cz tego: przenoszenie wÄ™zÅ‚Ã³w miÄ™dzy branchami metodÄ… "pociÄ…gnij i
+upuÅ›Ä‡", obsÅ‚uga "wytnij i wklej", przyciski promote/demote do
+przenoszenia liÅ›ci.
 
 %prep
 %setup -q
