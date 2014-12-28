@@ -12,7 +12,7 @@ Patch1:		%{name}-acam_fixes.patch
 URL:		http://primates.ximian.com/~peter/think/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	intltool
 BuildRequires:	libglade-gnome-devel
